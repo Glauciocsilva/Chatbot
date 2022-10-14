@@ -1,0 +1,37 @@
+import os
+def processar_resposta(resposta,nome):
+    if resposta == '1':
+        print(f'{os.linesep}{nome} o foco inicial é capacitar pessoas na utilização da ferramenta da Microsoft Office Excel e Power Bi.{os.linesep}O curso vem com uma  proposta de desenvolver sua capacidade de  extrair insights de um dataframe, utilizar{os.linesep}e criar importantes fórmulas, técnicas de formatação, tabelas, gráficos e montar excelentes e importantes dashboards.{os.linesep}')
+    elif resposta == '2':
+        print(f'{os.linesep}{nome} a modalidade pode ser presencial, ou online, depende da quantidade aberta de inscrição para turma, ou da divulgação da abertura curso a critério da empresa.{os.linesep}')
+    elif resposta == '3':
+        print(f'{os.linesep}{nome} o pré-requisito exigido é um notebook com sistema operacional windowns já instalados os softwares Microsoft Excel(atualizado){os.linesep}e ou Microsoft Power BI. O conhecimento será desenvolvido durante o curso, não é necessário nenhum conhecimento sobre as ferramentas.{os.linesep}')
+    elif resposta == '4':
+        print(f'{os.linesep}{nome}, Sim! O curso emite certificado após o trabalho de conclusão ao final do curso e com presença de no mínimo 80% das aulas.{os.linesp}A  Entrega do certificado é de um prazo de 24 horas via e-mail para turma online e  para turma presencial entregamos impresso.{os.linesep}')
+    elif resposta == '5':
+        print(f'{os.linesep}{nome} o pagamento é à vista via PIX, ou dividido pelo cartão de crédito. ( Na função crédito pode haver alteração devido a taxa do parcelamento).{os.linesep}')
+    elif resposta == '6':
+        print(f'{os.linesep}{nome} para se inscrever basta acessar o site  https://oxtimizando.wixsite.com/oxtimizando/inicio ou  através do numero (32)98806-0810{os.linesep}e também não se esqueça de nos seguir pelo instagram, @oxtimizando, e fique por dentro sobre abertura de turmas, cursos, promoções, sorteios e  intensivões.{os.linesep}')
+    else:
+        print('Digite apenas 1, 2, 3, 4, 5 ou 6')
+
+def start():
+#Apresentar o Chat Bot
+    print('Olá! Bem-vindo a Oxtimizando ')
+# Solicitar dados para followup, nome, email e telefone.
+    nome = input('Como voce se Chama? ')
+    email = input('Me informe seu e-mail:')
+
+    while True:
+        #oferecer o menu de opções
+            resposta = input(f'Digite um número e tire suas dúvidas sobre o curso?{os.linesep}[1] - Como Funciona o curso?{os.linesep}[2] - Qual a modalidade do curso?{os.linesep}[3] - O curso exige  algum pré-requisito? É necessário  ter algum conhecimento sobre o assunto?{os.linesep}[4] - O curso emite certificado? Em quanto tempo eu terei meu certificado?{os.linesep}[5] - Qual a forma de pagamento?{os.linesep}[6] - Estou interessado! Como faço para me inscrever?{os.linesep}{os.linesep}')
+        # Processar Resposta Enviada
+            processar_resposta(resposta,nome)
+
+
+
+
+
+
+if __name__ == '__main__':
+    start()
